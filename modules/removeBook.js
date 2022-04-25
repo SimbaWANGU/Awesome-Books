@@ -1,4 +1,4 @@
-import { bookArray } from '../index.js'; /* eslint-disable-line */
+import { bookArray } from './declarations.js';
 
 const removeBook = (selectedId) => {
   bookArray.splice(selectedId, 1);

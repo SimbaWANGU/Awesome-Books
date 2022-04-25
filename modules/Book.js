@@ -1,4 +1,4 @@
-import { bookArray } from '../index.js'; /* eslint-disable-line */
+import { bookArray } from './declarations.js';
 
 export default class Book {
   constructor(titleInput, authorInput) {

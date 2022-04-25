@@ -1,7 +1,7 @@
-import { addSection } from '../index.js'; /* eslint-disable-line */
-import removeBook from './removeBook.js'; /* eslint-disable-line */
+import { addSection } from './declarations.js';
+import removeBook from './removeBook.js';
 
-export function showBook(bookArray) { /* eslint-disable-line */
+const showBook = (bookArray) => { /* eslint-disable-line */
   addSection.innerHTML = '';
   bookArray.forEach((book, id) => {
     addSection.innerHTML += ` 
@@ -34,4 +34,6 @@ export function showBook(bookArray) { /* eslint-disable-line */
       });
     }
   });
-}
+};
+
+export default showBook;

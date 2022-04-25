@@ -1,18 +1,18 @@
-import Book from './modules/Book.js'; /* eslint-disable-line */
-import { showBook } from './modules/showBook.js'; /* eslint-disable-line */
-import timeNow from './modules/date.js'; /* eslint-disable-line */
-
-const titleInput = document.querySelector('#title');
-const authorInput = document.querySelector('#author');
-export const addSection = document.querySelector('#book-section');
-const addBtn = document.getElementById('add-btn');
-export const bookArray = JSON.parse(localStorage.getItem('book')) || [];
-const listNav = document.getElementById('list');
-const addNav = document.getElementById('add-it');
-const contactNav = document.getElementById('contact-us');
-const showBookSection = document.getElementById('added-book');
-const contactSection = document.getElementById('contact');
-export const time = document.getElementById('calendar');
+import Book from './modules/Book.js';
+import showBook from './modules/showBook.js';
+import timeNow from './modules/date.js';
+import {
+  addBtn,
+  titleInput,
+  authorInput,
+  listNav,
+  contactSection,
+  showBookSection,
+  addSection,
+  addNav,
+  contactNav,
+  bookArray,
+} from './modules/declarations.js';
 
 addBtn.addEventListener('click', () => {
   if (titleInput.value !== '' && authorInput.value !== '') {
