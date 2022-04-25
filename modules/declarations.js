@@ -1,0 +1,11 @@
+export const titleInput = document.querySelector('#title');
+export const authorInput = document.querySelector('#author');
+export const addSection = document.querySelector('#book-section');
+export const addBtn = document.getElementById('add-btn');
+export const bookArray = JSON.parse(localStorage.getItem('book')) || [];
+export const listNav = document.getElementById('list');
+export const addNav = document.getElementById('add-it');
+export const contactNav = document.getElementById('contact-us');
+export const showBookSection = document.getElementById('added-book');
+export const contactSection = document.getElementById('contact');
+export const time = document.getElementById('calendar');
